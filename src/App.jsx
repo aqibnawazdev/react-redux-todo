@@ -48,13 +48,13 @@ function App() {
           {editId ? "Update" : "Add"}
         </button>
       </div>
-      <div className="w-full flex flex-col gap-2 todos-container bg-gray-100 rounded mt-2 ">
+      <div className="w-full flex flex-col gap-1 todos-container bg-gray-100 rounded mt-2 p-2">
         {todos.map((todo) => (
           <div
             key={todo.id}
-            className="flex justify-between items-center gap-2 p-2  "
+            className="flex justify-between items-center gap-1  "
           >
-            <span className="text-2xl capitalize">{todo.content}</span>
+            <span className="text-xl capitalize">{todo.content}</span>
             <div>
               <button
                 className="bg-blue-500 text-white p-1 rounded mr-2"
